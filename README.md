@@ -8,7 +8,7 @@ View the full project [here](https://ashley-yihui-lee.github.io/taiwan-road).
 ## 📊 Data Sources
 
 - **Road Names Data**  
-  Sourced from [Taiwan’s Post Offcie](https://www.mnd.gov.tw/PublishTable.aspx?Types=%E5%8D%B3%E6%99%82%E8%BB%8D%E4%BA%8B%E5%8B%95%E6%85%8B&title=%E5%9C%8B%E9%98%B2%E6%B6%88%E6%81%AF)  
+  Sourced from [Taiwan’s Post Offcie](https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=207)  
   I scraped the data with Playwright. View the dataset with all cities and counties with Pinyin translation at [merged.csv]
   
 - **NCCU Election Study Center**  
@@ -26,4 +26,16 @@ View the full project [here](https://ashley-yihui-lee.github.io/taiwan-road).
 
 - **Taipei Road Photo**  
   Photo by Jimmy Liao on Pexels
-  https://www.pexels.com/photo/motor-vehicles-on-the-street-11906766/  
+  https://www.pexels.com/photo/motor-vehicles-on-the-street-11906766/
+---
+
+## Methodology
+Methodology
+To analyze how Taiwan’s street names reflect national identity, I first scraped address data from the official Taiwan Post Office website, which provides a comprehensive list of all road names across the island, organized by city and district. Using an automated script built with Playwright, I extracted the names of streets from every locality, resulting in a dataset of 45,044 entries.
+
+Next, I processed the data to identify the most frequently occurring characters and phrases in road names—such as “中山” (Zhongshan), “中正” (Zhongzheng), and “民族” (Minzu)—which are often linked to political figures, ideologies, or places in mainland China. I counted the frequency of each unique name element and compiled a ranked list of the top 10 most common road names across Taiwan.
+
+To make this data accessible to an international audience, I joined the results with a separate dataset published by Taiwan’s Ministry of the Interior, which includes official English translations of road names. This allowed for bilingual analysis and visualization of naming patterns.
+
+Through this method, I traced how streets named decades ago continue to carry the legacy of Chinese nationalism—and how these naming conventions persist even as Taiwanese identity evolves.
+
